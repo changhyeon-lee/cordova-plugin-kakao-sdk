@@ -29,7 +29,7 @@
             <access origin="https://*.kakao.co.kr" />
             <access origin="https://*.kakaocdn.net" />
         </config-file>
-        
+
         <source-file src="src/android/res/values/kakao_strings.xml" target-dir="res/values" />
         <source-file src="src/android/res/values-ko/kakao_strings.xml" target-dir="res/values-ko" />
         <config-file target="res/values/kakao_strings.xml" parent="/*">
@@ -38,17 +38,17 @@
             <string name="kakaolink_host">kakaolink</string>
         </config-file>
 
-        
-        
+
+
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         </config-file>
-        
+
         <config-file target="AndroidManifest.xml" parent="application">
         	<meta-data android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key" />
         </config-file>
-        
+
         <config-file target="AndroidManifest.xml" parent="application/activity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -68,12 +68,9 @@
         <resource-file src="src/android/res/drawable/btn_x.png" target="res/drawable/btn_x.png" />
         <resource-file src="src/android/res/drawable/story.png" target="res/drawable/story.png" />
         <resource-file src="src/android/res/drawable/talk.png" target="res/drawable/talk.png" />
-        <resource-file src="src/android/res/drawable/selector_login_button.xml" target="res/drawable/selector_login_button.xml" />
-        <resource-file src="src/android/res/layout/layout_login_dialog.xml" target="res/layout/layout_login_dialog.xml" />
-        <resource-file src="src/android/res/layout/layout_login_item.xml" target="res/layout/layout_login_item.xml" />
 
     </platform>
-    
+
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="KakaoCordovaSDK">
@@ -105,7 +102,7 @@
             <string>kakaostory-2.9.0</string>
           </array>
         </config-file>
-        
+
         <framework src="QuartzCore.framework" />
         <framework src="src/ios/KakaoCommon.framework" custom="true" />
         <framework src="src/ios/KakaoLink.framework" custom="true" />
@@ -118,6 +115,6 @@
         <header-file src="src/ios/KakaoCordovaSDK.h" />
         <source-file src="src/ios/KakaoCordovaStoryLinkHelper.m" />
         <header-file src="src/ios/KakaoCordovaStoryLinkHelper.h" />
-        
+
     </platform>
 </plugin>
