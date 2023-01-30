@@ -61,8 +61,8 @@
         <framework src="src/android/kakao.gradle" custom="true" type="gradleReference" />
 		<source-file src="src/android/KakaoCordovaSDK.java" target-dir="src/com/raccoondev85/plugin/kakao" />
         <source-file src="src/android/KakaoResources.java" target-dir="src/com/raccoondev85/plugin/kakao" />
-        <source-file src="src/android/KakaoStoryLink.java" target-dir="src/com/raccoondev85/plugin/kakao" />
-        <source-file src="src/android/KakaoCordovaErrorHandler.java" target-dir="src/com/raccoondev85/plugin/kakao" />
+<!--        <source-file src="src/android/KakaoStoryLink.java" target-dir="src/com/raccoondev85/plugin/kakao" />-->
+<!--        <source-file src="src/android/KakaoCordovaErrorHandler.java" target-dir="src/com/raccoondev85/plugin/kakao" />-->
         <resource-file src="src/android/res/values/styles.xml" target="res/values/styles.xml" />
         <resource-file src="src/android/res/drawable/account.png" target="res/drawable/account.png" />
         <resource-file src="src/android/res/drawable/btn_x.png" target="res/drawable/btn_x.png" />
